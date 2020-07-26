@@ -1,0 +1,139 @@
+{
+  "polymers": [
+    {
+      "name": "cellulose",
+      "structure": "/pictures/cellulose.jpg",
+      "spectrum": "/spectra/cellulose.csv",
+      "density": "1.5",
+      "gtt": "220",
+      "n": "1.48",
+      "young-m": "58.0"
+    },
+    {
+      "name": "nylon",
+      "structure": "/pictures/nylon.jpg",
+      "spectrum": "/spectra/nylon.csv",
+      "density": "1.15",
+      "gtt": "47",
+      "n": "1.58",
+      "young-m": "72.4"
+    },
+    {
+      "name": "pc",
+      "structure": "/pictures/pc.jpg",
+      "spectrum": "/spectra/pc.csv",
+      "density": "1.20-1.22",
+      "gtt": "147",
+      "n": "1.58",
+      "young-m": "2.0-2.4"
+    },
+    {
+      "name": "pcl",
+      "structure": "/pictures/pcl.jpg",
+      "spectrum": "/spectra/pcl.csv",
+      "density": "1.15",
+      "gtt": "-60",
+      "n": "1.48",
+      "young-m": "1.2"
+    },
+    {
+      "name": "pdms",
+      "structure": "/pictures/pdms.jpg",
+      "spectrum": "/spectra/pdms.csv",
+      "density": "0.97",
+      "gtt": "-125",
+      "n": "1.40",
+      "young-m": "0.4-0.9"
+    },
+    {
+      "name": "pet",
+      "structure": "/pictures/pet.jpg",
+      "spectrum": "/spectra/pet.csv",
+      "density": "1.38",
+      "gtt": "67-81",
+      "n": "1.57-1.58",
+      "young-m": "2.8-3.1"
+    },
+    {
+      "name": "pes",
+      "structure": "/pictures/pes.jpg",
+      "spectrum": "/spectra/pes.csv",
+      "density": "1.37",
+      "gtt": "203-225",
+      "n": "1.55",
+      "young-m": "2.4-2.9"
+    },
+    {
+      "name": "psu",
+      "structure": "/pictures/psu.jpg",
+      "spectrum": "/spectra/psu.csv",
+      "density": "1.24",
+      "gtt": "190-230",
+      "n": "1.63",
+      "young-m": "0.4"
+    },
+    {
+      "name": "pe",
+      "structure": "/pictures/pe.jpg",
+      "spectrum": "/spectra/ldpe.csv",
+      "density": "0.91-0.94",
+      "gtt": "100",
+      "n": "1.51-1.54",
+      "young-m": "0.1-0.5 (LDPE)"
+    },
+    {
+      "name": "pi",
+      "structure": "/pictures/pi.jpg",
+      "spectrum": "/spectra/pi.csv",
+      "density": "1.45",
+      "gtt": "350",
+      "n": "1.70",
+      "young-m": "2.5"
+    },
+    {
+      "name": "pp",
+      "structure": "/pictures/pp.jpg",
+      "spectrum": "/spectra/pp.csv",
+      "density": "0.86-0.95",
+      "gtt": "100",
+      "n": "1.49-1.52",
+      "young-m": "1.3-1.8"
+    },
+    {
+      "name": "ps",
+      "structure": "/pictures/ps.jpg",
+      "spectrum": "/spectra/ps.csv",
+      "density": "0.96-1.04",
+      "gtt": "100",
+      "n": "1.60",
+      "young-m": "3.0-3.6"
+    },
+    {
+      "name": "ptfe",
+      "structure": "/pictures/ptfe.jpg",
+      "spectrum": "/spectra/ptfe.csv",
+      "density": "2.2",
+      "gtt": "115",
+      "n": "1.38",
+      "young-m": "0.5"
+    },
+    {
+      "name": "pu",
+      "structure": "/pictures/pu.jpg",
+      "spectrum": "/spectra/pu.csv",
+      "density": "1.01-1.26",
+      "gtt": "-65",
+      "n": "1.65",
+      "young-m": "(0.9-4.5)x10-3"
+    },
+    {
+      "name": "pvf",
+      "structure": "/pictures/pvf.jpg",
+      "spectrum": "/spectra/pvf.csv",
+      "density": "1.45",
+      "gtt": "53",
+      "n": "1.46",
+      "young-m": "2.1"
+    }
+  ]
+}

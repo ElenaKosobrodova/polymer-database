@@ -1,0 +1,73 @@
+.form-control {
+  width: 350px;
+  margin: 10px;
+}
+
+.form-main-div {
+  margin: 0 5% 0 20%;
+}
+
+#form-group {
+  background-color: #f1f7fc;
+  border-radius: 3px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+label {
+  color: rgb(24, 16, 79);
+  margin: 10px 15px 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#message {
+  height: 150px;
+  margin-top: 20px;
+}
+
+#submit {
+  margin: 25px 5px 25px 30px;
+  border-radius: 4px;
+  background-color: rgb(52, 68, 140);
+  color: rgb(163, 227, 252);
+  font-size: 18px;
+  letter-spacing: 1px;
+  height: 40px;
+  width: 90px;
+}
+
+.input-field {
+  width: 90%;
+  margin: 2px auto;
+}
+
+#photo {
+  width: 200px;
+  height: auto;
+  border-radius: 3px;
+}
+
+#img-div {
+  margin: 60px 80px;
+}
+
+#contacts {
+  margin: 20% 20px;
+}
+
+h4 {
+  color: rgb(26, 66, 125);
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+h5 {
+  color: rgb(11, 11, 55);
+  font-size: 18px;
+  margin-bottom: 20px;
+}

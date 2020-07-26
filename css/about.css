@@ -1,0 +1,28 @@
+#about-div,
+#thanks-div {
+  margin: 3% auto;
+  border-radius: 15px;
+  width: 67%;
+}
+
+#thanks-div {
+  height: 65vh;
+}
+
+#thanks {
+  margin: auto 20%;
+}
+
+.about-p {
+  color: rgb(18, 9, 33);
+  padding: 20px;
+  width: 80%;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}

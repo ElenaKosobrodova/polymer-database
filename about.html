@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <title>Database of FTIR-ATR spectra of polymers</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <img
+        src="pictures/FTIR-logo.jpg"
+        alt="logo saying FTIR-ATR spectra of polymers"
+        id="logo"
+      />
+      <div class="container-fluid">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacts.html">Contacts</a>
+          </li>
+        </ul>
+        <form class="form-inline" id="frmSearch">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="search"
+          />
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <h1 class="text-center">About</h1>
+    <div class="container" id="about-div">
+      <p class="about-p">
+        Fourier transform infrared attenuated total reflectance spectroscopy
+        (FTIR-ATR) was performed by Yaroslav Kosobrodov during his work
+        experience in
+        <a
+          target="_blank"
+          href="https://sydney.edu.au/science/our-research/research-areas/physics/applied-and-plasma-physics.html"
+        >
+          Applied Plasma and Physics Lab</a
+        >, School of Physics, University of Sydney. The spectra were processed
+        with the help of Dr. Elena Kosobrodova who has created this website to
+        assist honor and PhD students with interpretation of FTIR-ATR spectra of
+        polymers. All images of polymer chemical structures except for PU and
+        PES were taken from Wikipedia. <br /><br />
+        All polymers ecxept for PCL and PU were obtained from GoodFellow
+        (Cambridge, UK). PCL was ordered from Sigma-Aldrich (Australia). PU was
+        provided by Smith & Nephew (Australia). FTIR-ATR spectra were measured
+        using a Digilab FTS7000 spectrometer fitted with a multiple bounce ATR
+        accessory (Harrick, USA) with a trapezium germanium crystal at an
+        incidence angle of 45°. To obtain sufficient signal/noise ratio, 500
+        scans were taken at a resolution of 4 cm<sup>-1</sup>.
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2019 Elena Kosobrodova
+    </footer>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+
+  <script src="main-2.js"></script>
+
+  <script type="text/javascript">
+    document.getElementById("frmSearch").onsubmit = function () {
+      window.location =
+        "http://www.google.com/search?q=" +
+        document.getElementById("search").value;
+      return false;
+    };
+  </script>
+</html>

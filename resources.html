@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/resources.css" />
+    <title>Database of FTIR-ATR spectra of polymers</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md ">
+      <img
+        src="pictures/FTIR-logo.jpg"
+        alt="logo saying FTIR-ATR spectra of polymers"
+        id="logo"
+      />
+      <div class="container-fluid">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacts.html">Contacts</a>
+          </li>
+        </ul>
+        <form class="form-inline" id="frmSearch">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="search"
+          />
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <h1 class="text-center">Resources</h1>
+    <div class="container resources-box">
+      <ul>
+        <li id="resources-list">
+          W.M. Doyle.
+          <a
+            id="resources-link"
+            target="_blank"
+            href="https://pdfs.semanticscholar.org/8b91/08726fe76043badeecd1c75ed6e72352b8a1.pdf"
+            >Principles and Applications of Fourier Transform Infrared (FTIR)
+            Process Analysis.</a
+          >
+          Technical Note AN-906 Rev. C, Hellma Axiom, Inc.
+        </li>
+        <li id="resources-list">
+          CHROMacademy.
+          <a
+            id="resources-link"
+            target="_blank"
+            href="https://www.chromacademy.com/lms/sco534/Infrared_Spectral_Interpretation.pdf"
+          >
+            Infrared Spectral Interpretation</a
+          >
+        </li>
+        <li id="resources-list">
+          J. Coates.
+          <a
+            id="resources-link"
+            target="_blank"
+            href="http://www3.uma.pt/jrodrigues/disciplinas/QINO-II/Teorica/IR.pdf"
+            >Interpretation of Infrared Spectra, A Practical Approach.</a
+          >
+          Encyclopedia of Analytical Chemistry. R.A. Meyers (Ed.) John Wiley &
+          Sons Ltd.
+        </li>
+        <li id="resources-list">
+          ThermoFisher Scientific.
+          <a
+            id="resources-link"
+            target="_blank"
+            href="https://www.thermofisher.com/au/en/home/industrial/spectroscopy-elemental-isotope-analysis/spectroscopy-elemental-isotope-analysis-learning-center/molecular-spectroscopy-information/ftir-information/ftir-applications.html"
+          >
+            FTIR Applications
+          </a>
+        </li>
+        <li id="resources-list">
+          <a
+            id="resources-link"
+            target="_blank"
+            href="https://polymerdatabase.com/home.html"
+            >Polymer Properties Database</a
+          >
+        </li>
+        <li id="resources-list">
+          GoodFellow.
+          <a
+            id="resources-link"
+            target="_blank"
+            href="https://www.goodfellow.com/catalogue/GFCat2.php?ewd_token=lHsJPqiuBdAfIXRP8BVxvmLnHusEUl&n=YWfhVP44t0fgOGEJTfd4WdPrNa2r0K"
+            >Material Properties</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      &copy; 2019 Elena Kosobrodova
+    </footer>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+
+  <script src="main-2.js"></script>
+
+  <script type="text/javascript">
+    document.getElementById("frmSearch").onsubmit = function() {
+      window.location =
+        "http://www.google.com/search?q=" +
+        document.getElementById("search").value;
+      return false;
+    };
+  </script>
+</html>

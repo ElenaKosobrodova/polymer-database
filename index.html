@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Database of FTIR-ATR spectra of polymers</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md ">
+      <img
+        src="pictures/FTIR-logo.jpg"
+        alt="logo saying FTIR-ATR spectra of polymers"
+        id="logo"
+      />
+      <div class="container-fluid">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacts.html">Contacts</a>
+          </li>
+        </ul>
+        <form class="form-inline" id="frmSearch">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="search"
+          />
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="d-flex" id="main-box">
+      <div class="sidenav" id="btn-box">
+        <a role="button" class="btn btn-polymer" href="#cellulose-h"
+          >cellulose</a
+        >
+        <a role="button" class="btn btn-polymer" href="#nylon-h">nylon 6</a>
+        <a role="button" class="btn btn-polymer" href="#pc-h"
+          >polycarbonate (PC)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pcl-h"
+          >polycaprolactone (PCL)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pdms-h"
+          >polydimethylsiloxane (PDMS)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pet-h">
+          polyester (PET)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pes-h"
+          >polyethersulfone (PES)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#psu-h"
+          >polysulfone (PSU)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pe-h"
+          >polyethylene (LDPE)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pe-h"
+          >polyethylene (PE)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pi-h">polyimide (PI)</a>
+        <a role="button" class="btn btn-polymer" href="#pp-h"
+          >polypropylene (PP)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#ps-h"
+          >polystyrene (PS)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#ptfe-h"
+          >poltetrafluoroethylene (PTFE)</a
+        >
+        <a role="button" class="btn btn-polymer" href="#pu-h"
+          >polyurethane (PU)</a
+        >
+
+        <a role="button" class="btn btn-polymer" href="#pvf-h"
+          >polyvinyl fluoride (PVF)</a
+        >
+      </div>
+
+      <div id="text-section" class="d-flex">
+        <ol>
+          <li class="subhead" id="cellulose-h">Cellulose</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.44</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>58</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>220</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.48</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/cellulose.jpg"
+                alt="chemical structure of cellulose"
+                class="img-structure"
+                id="cellulose-structure"
+              />
+            </div>
+            <div class="plot-div" id="cellulose"></div>
+            <p class="main-p">
+              The vibration lines in 1800 - 1600 cm<sup>-1</sup> region are
+              usually asigned to C=O, C=N or C=C bonds. Chemical structure of
+              "ideal" cellulose does not contain any of these groups and, in
+              literature, 1650 cm<sup>-1</sup> peak is interpreted as adsorbed
+              water [1], which is possible as cellulose is hydrophilic. C=O
+              bonds formed as defects during cellulose synthesis can also
+              provide some contribution to the intensity of 1650 cm<sup>-1</sup>
+              peak. <br />
+              <br />
+              [1] X. Guo, L. Liu, J. Wu, J. Fan, Y. Wu.
+              <a
+                id="ref-link"
+                target="_blank"
+                href="https://pubs.rsc.org/en/content/articlelanding/2018/ra/c7ra09894d#!divAbstract"
+              >
+                Qualitatively and quantitatively characterizing water adsorption
+                of a cellulose nanofiber film using micro-FTIR spectroscopy.</a
+              >
+              RSC Adv, 8(2018)4214-4220.
+            </p>
+          </div>
+          <li class="subhead" id="nylon-h">Nylon 6</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.13</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>72.4</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>47</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.53</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/nylon.jpg"
+                alt="chemical structure of nylon"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="nylon"></div>
+          </div>
+          <li class="subhead" id="pc-h">Polycarbonate (PC)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.20-1.22</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>2.0-2.4</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>147</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.58</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pc.jpg"
+                alt="chemical structure of polycarbonate"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pc"></div>
+          </div>
+          <li class="subhead" id="pcl-h">Polycaprolactone (PCL)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.15</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>1.2</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>- 60</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.48</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pcl.jpg"
+                alt="chemical structure of polycaprolactone"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pcl"></div>
+          </div>
+          <li class="subhead" id="pdms-h">Polydimethylsiloxane (PDMS)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>0.97</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>0.4-0.9</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>- 125</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.40</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pdms.jpg"
+                alt="chemical structure of polydimethylsiloxane"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pdms"></div>
+          </div>
+          <li class="subhead" id="pet-h">Polyester (PET)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.38</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>2.8-3.1</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>67-81</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.58</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pet.jpg"
+                alt="chemical structure of polyester"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pet"></div>
+          </div>
+
+          <li class="subhead" id="pes-h">Polyethersulfone (PES)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.37</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>2.4-2.9</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>203-225</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.65</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pes.jpg"
+                alt="chemical structure of polyethersulfone"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pes"></div>
+          </div>
+          <li class="subhead" id="psu-h">Polysulfone (PSU)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.24</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>0.4</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>190-230</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.63</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/psu.jpg"
+                alt="chemical structure of polysulfone"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="psu"></div>
+          </div>
+          <li class="subhead" id="pe-h">Polyethylene (LDPE)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>0.91-0.96</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>0.1-0.5</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.51-1.54</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pe.jpg"
+                alt="chemical structure of polyethylene"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pe"></div>
+            <p class="main-p">
+              Although chemical structure of "ideal" polyethylene does not
+              contain C=O bonds, weak vibration lines corresponding to these
+              bonds can be observed in FTIR-ATR spectrum at 1735 cm<sup>-1</sup>
+              due to photooxidation or synthesis defects [2]. <br /><br />
+              The vibration lines in 3000 - 2800 cm <sup>-1</sup> region
+              correspond to assymetrical/symmetrical stretch, while the
+              vibration lines in 1490 - 1300 cm <sup>-1</sup> and 760 - 700 cm
+              <sup>-1</sup> regions are assigned to bend and rocking,
+              respectively. <br /><br />
+              [2] L. Chen, T.D. Huan, R. Ramprasad.
+              <a
+                id="ref-link"
+                target="_blank"
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5522474/"
+              >
+                Electronic Structure of Polyethylene: Role of Chemical,
+                Morphological and Interfacial Complexity.</a
+              >
+              Sci Rep, 7(2017)6128.
+            </p>
+          </div>
+          <li class="subhead" id="pi-h">Polyimide (PI)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.45</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>2.5</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>350</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.70</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pi.jpg"
+                alt="chemical structure of polyimide"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pi"></div>
+          </div>
+          <li class="subhead" id="pp-h">Polypropylene (PP)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>0.86-0.95</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>1.3-1.8</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.49-1.52</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pp.jpg"
+                alt="chemical structure of polypropylene"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pp"></div>
+          </div>
+          <li class="subhead" id="ps-h">Polystyrene (PS)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>0.96-1.05</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>3.0-3.6</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.60</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/ps.jpg"
+                alt="chemical structure of polystyrene"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="ps"></div>
+          </div>
+          <li class="subhead" id="ptfe-h">Polytetrafluoroethylene (PTFE)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>2.2</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>0.5</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>115</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.38</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/ptfe.jpg"
+                alt="chemical structure of polytetrafluoroethylene"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="ptfe"></div>
+          </div>
+          <li class="subhead" id="pu-h">Polyurethane (PU)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.01-1.26</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>(0.9-4.5)x10<sup>-3</sup></td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>-65</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.65</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pu.jpg"
+                alt="chemical structure of polyurethane"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pu"></div>
+          </div>
+
+          <li class="subhead" id="pvf-h">Polyvinyl fluoride (PVF)</li>
+          <div>
+            <div class="d-flex">
+              <table id="tab">
+                <tr>
+                  <th>Density, g/cm<sup>3</sup></th>
+                  <td>1.45</td>
+                </tr>
+                <tr>
+                  <th>Young's Modulus, GPa</th>
+                  <td>2.1</td>
+                </tr>
+                <tr>
+                  <th>Glass Transition Temperature, <sup>o</sup>C</th>
+                  <td>53</td>
+                </tr>
+                <tr>
+                  <th>Refractive Index</th>
+                  <td>1.46</td>
+                </tr>
+              </table>
+
+              <img
+                src="pictures/pvf.jpg"
+                alt="chemical structure of polyvinyl fluoride"
+                class="img-structure"
+              />
+            </div>
+            <div class="plot-div" id="pvf"></div>
+          </div>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2019 Elena Kosobrodova
+    </footer>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+
+  <script src="main-2.js"></script>
+
+  <script type="text/javascript">
+    document.getElementById("frmSearch").onsubmit = function() {
+      window.location =
+        "http://www.google.com/search?q=" +
+        document.getElementById("search").value;
+      return false;
+    };
+  </script>
+</html>

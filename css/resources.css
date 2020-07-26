@@ -1,0 +1,20 @@
+.resources-box{
+    width: 70%;
+    margin: 5% auto;
+    text-align: justify; 
+}
+
+#resources-list{
+    margin: 20px;
+    font-size: 18px;
+}
+
+#resources-link{
+    color: navy;
+    font-weight: bold;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
